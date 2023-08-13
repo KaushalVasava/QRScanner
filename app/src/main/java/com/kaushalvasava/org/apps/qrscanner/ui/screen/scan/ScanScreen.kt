@@ -2,13 +2,14 @@ package com.kaushalvasava.org.apps.qrscanner.ui.screen.scan
 
 import android.view.View
 import android.widget.Toast
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -48,10 +49,13 @@ fun ScanScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         TopAppBar(
-            title = { Text(stringResource(R.string.result)) },
+            title = { Text(stringResource(R.string.scan_code)) },
             navigationIcon = {
                 IconButton(onClick = { navController.popBackStack() }) {
-                    Icon(Icons.Default.ArrowBack, contentDescription = stringResource(R.string.back))
+                    Icon(
+                        Icons.Default.ArrowBack,
+                        contentDescription = stringResource(R.string.back)
+                    )
                 }
             }
         )
@@ -91,13 +95,15 @@ fun ScanScreen(navController: NavController) {
         Spacer(modifier = Modifier.height(8.dp))
         Text("OR")
         Spacer(modifier = Modifier.height(8.dp))
-        IconButton(onClick = {
+        Button(onClick = {
             navController.navigate(NavigationItem.ImagePicker.route)
         }) {
             Icon(
                 painter = painterResource(id = R.drawable.ic_image),
                 contentDescription = null,
             )
+            Spacer(modifier = Modifier.width(8.dp))
+            Text(stringResource(R.string.select_code_form_device))
         }
     }
 }
