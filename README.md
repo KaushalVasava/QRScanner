@@ -1,5 +1,5 @@
 # QRScanner
-It is QR code app, It is implemented using Jetpack compose.
+It is QR code app, It is implemented using Jetpack compose. I used Android CompoundBarcodeView inside composable, and new media picker for pick qr code from device and coil library to show qr code.
 
 Features:
 - Scan QR code live 
