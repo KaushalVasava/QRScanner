@@ -36,7 +36,7 @@ fun ResultScreen(navController: NavController, result: String?) {
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-        TopAppBar(title = { Text("Result") }, navigationIcon = {
+        TopAppBar(title = { Text(stringResource(id = R.string.result)) }, navigationIcon = {
             IconButton(onClick = { navController.popBackStack() }) {
                 Icon(Icons.Default.ArrowBack, contentDescription = stringResource(R.string.back))
             }
