@@ -7,6 +7,7 @@ Features:
 - Generate QR Code based on your input. For ex. Email, website link, phonenumber, etc.
 - Linkify feature to click to call and open scanned link in the browser quickly.
 - Copy Option for generated Qr code information.
+- Share option for Qr code
 
 # Android Topics you will learn:
 - Kotlin
@@ -16,7 +17,11 @@ Features:
 - Navigation
 - Camera
 - New Media picker
+- How to Share Image in Jetpack compose
 
+# Video
+
+https://github.com/KaushalVasava/QRScanner/assets/49050597/a39a1580-4912-44d2-950f-e0455bbfaa2c
 
 Thank you,
 Kaushal Vasava
