@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">QR Scanner</string>
+    <string name="enter_phone_number_email_website_link_etc">Enter phone number, email, website link, etc.</string>
+    <string name="back">Back</string>
+    <string name="result">Result</string>
+    <string name="generate">Generate</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="copy">Copy</string>
 </resources>

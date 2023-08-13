@@ -1,6 +1,5 @@
 package com.kaushalvasava.org.apps.qrscanner
 
-import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
@@ -20,9 +19,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.content.ContextCompat
 import androidx.navigation.compose.rememberNavController
-import com.google.zxing.client.android.BeepManager
-import com.kaushalvasava.org.apps.qrscanner.ui.navhost.MyAppNavHost
-import com.kaushalvasava.org.apps.qrscanner.ui.screen.scan.ScanScreen
+import com.kaushalvasava.org.apps.qrscanner.ui.navhost.AppNavHost
 import com.kaushalvasava.org.apps.qrscanner.ui.theme.QRScannerTheme
 
 class MainActivity : ComponentActivity() {
@@ -64,7 +61,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
 //                    ScanScreen()
-                    MyAppNavHost(navController = rememberNavController())
+                    AppNavHost(navController = rememberNavController())
                     // TabLayoutScreen()
                 }
             }
